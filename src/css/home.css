@@ -1,0 +1,30 @@
+/* for large screens */
+.home-main {
+  position: relative;
+}
+.sell-form-lg {
+  width: 350px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px lightgrey;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  left: 7%;
+  display: flex;
+  justify-content: center;
+}
+.carousel-image {
+  aspect-ratio: 4;
+}
+/* for small screns */
+@media screen and (max-width: 768px) {
+  .carousel-image {
+    aspect-ratio: 2.3;
+    border-radius: 5px;
+  }
+  .sell-form-lg {
+    display: none;
+  }
+}
