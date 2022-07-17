@@ -11,6 +11,9 @@ function Products() {
         <p className="prod-title">Products</p>
         <div className="prod-list">
           <div className="prod-item">
+            <div className="o-prod-cart">
+              <ShoppingBagOutlinedIcon style={{ fontSize: "1.3rem" }} />
+            </div>
             <div
               className="prod-img"
               style={{
@@ -21,25 +24,127 @@ function Products() {
             <div className="o-prod-info">
               <div className="o-prod-det">
                 <p className="o-prod-title">One Plus 10T</p>
-                <p className="o-prod-desc">
+                {/* <p className="o-prod-desc">
                   hey there thahas asjjk asuhas hhsna hey there how are you
                   check out some new device pover here jdhas jksskd lla
-                </p>
+                </p> */}
                 <p className="o-prod-loc">
-                  <LocationOnOutlinedIcon style={{ fontSize: "1rem" }} /> Guntur
+                  {/* <LocationOnOutlinedIcon style={{ fontSize: "1rem" }} /> */}
+                  Guntur
                 </p>
                 {/* </div> */}
-              </div>
-              <div className="o-prod-cart">
-                <ShoppingBagOutlinedIcon />
               </div>
             </div>
             {/* <img className="prod-image" src={dummy} alt="dummy" /> */}
           </div>
-          <div className="prod-item"></div>
-          <div className="prod-item"></div>
-          <div className="prod-item"></div>
-          <div className="prod-item"></div>
+          <div className="prod-item">
+            <div className="o-prod-cart">
+              <ShoppingBagOutlinedIcon style={{ fontSize: "1.3rem" }} />
+            </div>
+            <div
+              className="prod-img"
+              style={{
+                backgroundImage: `url(${dummy})`,
+              }}
+            ></div>
+            {/* <div className="overlay"> */}
+            <div className="o-prod-info">
+              <div className="o-prod-det">
+                <p className="o-prod-title">One Plus 10T</p>
+                {/* <p className="o-prod-desc">
+                  hey there thahas asjjk asuhas hhsna hey there how are you
+                  check out some new device pover here jdhas jksskd lla
+                </p> */}
+                <p className="o-prod-loc">
+                  {/* <LocationOnOutlinedIcon style={{ fontSize: "1rem" }} /> */}
+                  Guntur
+                </p>
+                {/* </div> */}
+              </div>
+            </div>
+            {/* <img className="prod-image" src={dummy} alt="dummy" /> */}
+          </div>
+          <div className="prod-item">
+            <div className="o-prod-cart">
+              <ShoppingBagOutlinedIcon style={{ fontSize: "1.3rem" }} />
+            </div>
+            <div
+              className="prod-img"
+              style={{
+                backgroundImage: `url(${dummy})`,
+              }}
+            ></div>
+            {/* <div className="overlay"> */}
+            <div className="o-prod-info">
+              <div className="o-prod-det">
+                <p className="o-prod-title">One Plus 10T</p>
+                {/* <p className="o-prod-desc">
+                  hey there thahas asjjk asuhas hhsna hey there how are you
+                  check out some new device pover here jdhas jksskd lla
+                </p> */}
+                <p className="o-prod-loc">
+                  {/* <LocationOnOutlinedIcon style={{ fontSize: "1rem" }} /> */}
+                  Guntur
+                </p>
+                {/* </div> */}
+              </div>
+            </div>
+            {/* <img className="prod-image" src={dummy} alt="dummy" /> */}
+          </div>
+          <div className="prod-item">
+            <div className="o-prod-cart">
+              <ShoppingBagOutlinedIcon style={{ fontSize: "1.3rem" }} />
+            </div>
+            <div
+              className="prod-img"
+              style={{
+                backgroundImage: `url(${dummy})`,
+              }}
+            ></div>
+            {/* <div className="overlay"> */}
+            <div className="o-prod-info">
+              <div className="o-prod-det">
+                <p className="o-prod-title">One Plus 10T</p>
+                {/* <p className="o-prod-desc">
+                  hey there thahas asjjk asuhas hhsna hey there how are you
+                  check out some new device pover here jdhas jksskd lla
+                </p> */}
+                <p className="o-prod-loc">
+                  {/* <LocationOnOutlinedIcon style={{ fontSize: "1rem" }} /> */}
+                  Guntur
+                </p>
+                {/* </div> */}
+              </div>
+            </div>
+            {/* <img className="prod-image" src={dummy} alt="dummy" /> */}
+          </div>
+          <div className="prod-item">
+            <div className="o-prod-cart">
+              <ShoppingBagOutlinedIcon style={{ fontSize: "1.3rem" }} />
+            </div>
+            <div
+              className="prod-img"
+              style={{
+                backgroundImage: `url(${dummy})`,
+              }}
+            ></div>
+            {/* <div className="overlay"> */}
+            <div className="o-prod-info">
+              <div className="o-prod-det">
+                <p className="o-prod-title">One Plus 10T</p>
+                {/* <p className="o-prod-desc">
+                  hey there thahas asjjk asuhas hhsna hey there how are you
+                  check out some new device pover here jdhas jksskd lla
+                </p> */}
+                <p className="o-prod-loc">
+                  {/* <LocationOnOutlinedIcon style={{ fontSize: "1rem" }} /> */}
+                  Guntur
+                </p>
+                {/* </div> */}
+              </div>
+            </div>
+            {/* <img className="prod-image" src={dummy} alt="dummy" /> */}
+          </div>
         </div>
       </div>
     </div>
