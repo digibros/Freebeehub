@@ -2,7 +2,7 @@ import React from "react";
 import "../../css/header.css";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import SearchIcon from "@mui/icons-material/Search";
-function Header() {
+function Header({ openModal }) {
   return (
     <div className="header">
       <div className="header-main">
@@ -24,7 +24,9 @@ function Header() {
           />{" "}
           Guntur
         </div>
-        <div class="login-button">Login</div>
+        <div class="login-button" onClick={openModal}>
+          Login
+        </div>
       </div>
     </div>
   );
