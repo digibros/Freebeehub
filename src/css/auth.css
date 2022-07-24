@@ -48,7 +48,9 @@
   margin: 5px !important;
   margin-top: 7px !important;
 }
-
+.otp-input:focus {
+  outline: 0 !important;
+}
 .primary-btn {
   background-color: #00b5cd !important;
   margin-top: 25px !important;

@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../css/header.css";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import SearchIcon from "@mui/icons-material/Search";
-function Header({ openModal }) {
+import { connect } from "react-redux";
+import LogoutIcon from "@mui/icons-material/Logout";
+import { logoutAction } from "../../redux/actions/Auth";
+function Header({ openModal, user, logoutAction }) {
+  useEffect(() => {
+    console.log(user);
+  }, []);
   return (
     <div className="header">
       <div className="header-main">
@@ -24,12 +30,39 @@ function Header({ openModal }) {
           />{" "}
           Guntur
         </div>
-        <div class="login-button" onClick={openModal}>
-          Login
-        </div>
+        {user?.customer_id ? (
+          <>
+            <p
+              style={{
+                fontWeight: "bold",
+                fontSize: "0.9rem",
+                margin: 0,
+                color: "grey",
+                marginLeft: "10px",
+                cursor: "pointer",
+                userSelect: "none",
+              }}>
+              {user.customer_name}
+            </p>
+            <LogoutIcon
+              onClick={logoutAction}
+              style={{
+                marginLeft: "10px",
+                fontSize: "1.3rem",
+                marginBottom: "3px",
+                cursor: "pointer",
+              }}
+            />
+          </>
+        ) : (
+          <div class="login-button" onClick={openModal}>
+            Login
+          </div>
+        )}
       </div>
     </div>
   );
 }
-
-export default Header;
+const mapStateToProps = (state) => ({ user: state.user.user });
+const mapDispatchToProps = { logoutAction };
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
